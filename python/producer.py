@@ -4,7 +4,7 @@ from confluent_kafka import Producer
 
 # Kafka producer configuration
 producer_config = {
-    'bootstrap.servers': '10.5.4.43:9092',  # Use your host machine's IP
+    'bootstrap.servers': 'your_ip_adress:9092',  # Use your host machine's IP
     'client.id': 'weather-producer'
 }
 
@@ -12,7 +12,7 @@ producer_config = {
 producer = Producer(producer_config)
 
 # OpenWeatherMap API configuration
-api_key = '4d22425c2dd36bf5a74d7fb55569e6f7'
+api_key = 'your_api_key'
 city = 'Rabat'  # Replace with the name of your city
 weather_url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
 
