@@ -13,9 +13,9 @@ services:
     image: wurstmeister/kafka
     container_name: kafka
     ports:
-      - "10.5.4.43:9092:9092"  # Update the host IP here
+      - "your_ip_adress:9092:9092"  # Update the host IP here
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: 10.5.4.43  # Update the host IP here
+      KAFKA_ADVERTISED_HOST_NAME: your_ip_adress  # Update the host IP here
       KAFKA_ADVERTISED_PORT: 9092
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     networks:
