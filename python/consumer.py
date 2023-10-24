@@ -2,7 +2,7 @@ from confluent_kafka import Consumer, KafkaError
 
 # Kafka consumer configuration
 consumer_config = {
-    'bootstrap.servers': '10.5.4.43:9092',  # Use your host machine's IP
+    'bootstrap.servers': 'your_ip_adress:9092',  # Use your host machine's IP
     'group.id': 'weather-consumer',
     'auto.offset.reset': 'earliest'
 }
